@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title id="title">Survey</title>
+    </head>
+    <body>
+        <h1>Cool Cafe Survey</h1>
+        <p>Thank you for taking the time to help us improve our business</p>
+        <form id="survey-form">
+            <fieldset>
+                <label>Name <input type="text" name="user-name" required></label>
+                <label>Email <input type="email" name="email" required></label>
+                <label>Age (Optional) <input type="number" name="age" min="13" max="120"></label>
+            </fieldset>
+            <fieldset>
+                <p>Would you recommend Cool Cafe to a friend? </p>
+                <label><input type="radio" name="recommend" value="yes">Definitely!</label>
+                <label><input type="radio" name="recommend" value="maybe">Maybe</label>
+                <label><input type="radio" name="recommend" value="not-sure">Not sure</label>
+            </fieldset>
+            <fieldset>
+                <label>What was your favorite feature of Cool Cafe?
+                    <select name="reference" id="dropdown">
+                        <option value="">()Select one</option>
+                        <option value=""></option>
+                        <otion value=""></otion>
+                        <option value=""></option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>How can we do better? (Select all that apply)
+                    <input type="checkbox" >
+                    <input type="checkbox" >
+                    <input type="checkbox" >
+                    <input type="checkbox" >
+                    <input type="checkbox" >
+                    <input type="checkbox" >
+                </label>
+                <label>
+                    Any comments or suggestions?
+                    <textarea name="comments" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+                </label>
+            </fieldset>
+        </form>
+
+
+    </body>
+</html>
