@@ -8,45 +8,52 @@
     </head>
     <body>
         <h1>Cool Cafe Survey</h1>
-        <p>Thank you for taking the time to help us improve our business</p>
+        <p id="description">Thank you for taking the time to help us improve our business</p>
         <form id="survey-form">
             <fieldset>
-                <label>Name <input type="text" name="user-name" required></label>
-                <label>Email <input type="email" name="email" required></label>
-                <label>Age (Optional) <input type="number" name="age" min="13" max="120"></label>
+                <label>Name <input type="text" name="user-name" required id="name-label" id="name"></label>
+                <label>Email <input type="email" name="email" required id="email-label" id="email"></label>
+                <label>Age (Optional) <input type="number" name="age" min="13" max="120" id="number-label" id="number"></label>
             </fieldset>
             <fieldset>
                 <p>Would you recommend Cool Cafe to a friend? </p>
-                <label><input type="radio" name="recommend" value="yes">Definitely!</label>
-                <label><input type="radio" name="recommend" value="maybe">Maybe</label>
-                <label><input type="radio" name="recommend" value="not-sure">Not sure</label>
+                <label><input type="radio" name="recommend" value="yes" class="inline">Definitely!</label>
+                <label><input type="radio" name="recommend" value="maybe" class="inline">Maybe</label>
+                <label><input type="radio" name="recommend" value="not-sure" class="inline">Not sure</label>
             </fieldset>
             <fieldset>
                 <label>What was your favorite feature of Cool Cafe?
                     <select name="reference" id="dropdown">
-                        <option value="">()Select one</option>
-                        <option value=""></option>
-                        <otion value=""></otion>
-                        <option value=""></option>
+                        <option value="">(Select one)</option>
+                        <option value="decor">Decor</option>
+                        <otion value="coffee">Music</option>
+                        <option value="desserts">Desserts</option>
                     </select>
                 </label>
             </fieldset>
             <fieldset>
-                <label>How can we do better? (Select all that apply)
-                    <input type="checkbox" >
-                    <input type="checkbox" >
-                    <input type="checkbox" >
-                    <input type="checkbox" >
-                    <input type="checkbox" >
-                    <input type="checkbox" >
+                <p>How can we do better? (Select all that apply)</p>
+                <label>
+                    <input type="checkbox" class="inline">
+                    More coffe flavors
                 </label>
                 <label>
+                    <input type="checkbox" class="inline">
+                    More dessert options
+                </label>   
+                <label>
+                    <input type="checkbox" class="inline">
+                    More breakfast sandwich options
+                </label>
+                <label>
+                    <input type="checkbox" class="inline">
+                    Other(please specify in 'comments' section)
+                </label>
                     Any comments or suggestions?
                     <textarea name="comments" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
                 </label>
             </fieldset>
+            <input type=submit value="Submit" id="submit">
         </form>
-
-
     </body>
 </html>
